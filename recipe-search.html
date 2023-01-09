@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipe Search Tool</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+  <head>
+    <link rel="stylesheet" href="recipes.css">
+    <title>Recipe Search</title>
+  </head>
+  <body>
+    <!-- Inputting ingredients -->
+    <form id="ingredients-form">
+      <label for="ingredients-input" id="ingredients-label">Enter your ingredients:</label><br>
+      <input type="text" id="ingredients-input" placeholder = "e.g. chicken, garlic, onion"name="ingredients"><br>
+      <button type="submit" id = "search-button">Find Recipes</button>
+    </form>
+    <!-- Dropdown menu -->
+<label for="sort-select" id="sort-label">Sort by:</label>
+<select id="sort-select">
+  <option value="none">None</option>
+  <option value="alpha">Alphabetical</option>
+  <option value="alpha-reverse">Alphabetically (reverse)</option>
+  <option value="cook-time">Cook time</option>
+  <option value="servings">Servings</option>
+</select>
+<!-- Drop-In Page -->
+<div id="welcome">
+  <h2 id="welcome-message">Welcome to the Recipe Search Tool</h2>
+  <p id="how-to-use">To search for recipes, enter a list of ingredients(seperated by commas) in the search box and click "Find Recipes". <br><br>
+    You can sort the results by selecting an option from the "Sort By" dropdown menu. <br><br>
+    Click on a recipe to view the full instructions of the recipe.</p>
+</div>
+    <div id="recipe-list"></div>
+    <!-- Fun Stuff -->
+    <script src="getRecipe.js"></script>
+  </body>
+</html>
